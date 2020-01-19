@@ -1,0 +1,35 @@
+.main-footer {
+  background-color: #56ccf2;
+  color: white;
+  padding: 0.25em 0;
+}
+.main-footer-container {
+  display: flex;
+  align-items: center;
+}
+.footer-title {
+  text-align: center;
+  margin: 0;
+  font-size: 4em;
+  font-family: "Booter - Zero Zero";
+  font-weight: normal;
+  color: white;
+}
+.icon {
+  flex-grow: 1;
+  text-align: end;
+}
+.icon-img {
+  width: 150px;
+  height: 120px;
+  padding: 0 0.5em;
+  cursor: pointer;
+}
+.icon-img:hover {
+  display: inline-block;
+  padding: 0.5em;
+  transition: all 0.5s ease-out;
+  color: #4a8691;
+  text-decoration: none;
+  background-color: rgba(41, 40, 40, 0.3);
+}
