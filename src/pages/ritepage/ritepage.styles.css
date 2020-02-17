@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 508px) {
   .standard-bg {
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
