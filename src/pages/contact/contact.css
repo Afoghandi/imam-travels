@@ -37,6 +37,14 @@
   font-weight: bold;
   background-color: lightgray;
   width: 50%;
-  padding: 0;
+  padding: 5px;
   margin: 0;
+}
+.contact-text {
+  color: green;
+  font-weight: bold;
+  background-color: lightgray;
+  width: 70%;
+  padding: 5px;
+  margin: 5px;
 }

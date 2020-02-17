@@ -7,7 +7,7 @@ const Footer = () => (
 		<div className="main-footer-container">
 			<h3 className="footer-title"> Imam_Travels </h3>{" "}
 			<div className="icon">
-				<Link to="https://www.spotify.com" target="_blank">
+				<Link to="" target="_blank">
 					<img
 						className="icon-img"
 						src={require("../../images/IATA logo.png")}
@@ -20,7 +20,7 @@ const Footer = () => (
 						src={require("../../images/nahcon logo.jpg")}
 						alt="none"
 					></img>{" "}
-				</Link>
+				</Link>{" "}
 				<Link>
 					<img
 						className="icon-img"
@@ -28,8 +28,15 @@ const Footer = () => (
 						alt="none"
 					></img>{" "}
 				</Link>{" "}
-			</div>{" "}
-		</div>{" "}
+				<Link>
+					<img
+						className="icon-img"
+						src={require("../../images/nanta.png")}
+						alt="none"
+					></img>
+				</Link>
+			</div>
+		</div>
 	</div>
 );
 export default Footer;

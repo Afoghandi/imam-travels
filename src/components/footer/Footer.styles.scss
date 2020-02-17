@@ -1,20 +1,12 @@
 @media screen and(min-width: 508px) {
     .main-footer {
-        //display: grid;
         grid-template-columns: 2fr 3fr;
         grid-column-gap: 1rem;
-        background-color: #56ccf2;
+        background-color: grey;
         color: white;
         padding: 0.25em 0;
     }
 }
-
-
-/*.main-footer {
-    background-color: #56ccf2;
-    color: white;
-    padding: 0.25em 0;
-}*/
 
 .main-footer-container {
     display: flex;
@@ -24,10 +16,10 @@
 .footer-title {
     text-align: center;
     margin: 0;
-    font-size: 4em;
+    font-size: 2.5em;
     font-family: "Booter - Zero Zero";
     font-weight: normal;
-    color: white;
+    color: rgb(75, 30, 75);
 }
 
 .icon {
