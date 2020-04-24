@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 const Footer = () => (
 	<div className="main-footer">
 		<div className="main-footer-container">
-			<h3 className="footer-title"> Imam_Travels </h3>{" "}
+			<Link to="/">
+				<img src={require("../../images/imam logo.png")} alt="imam-travels" />
+			</Link>{" "}
 			<div className="icon">
 				<Link to="" target="_blank">
 					<img
@@ -33,10 +35,10 @@ const Footer = () => (
 						className="icon-img"
 						src={require("../../images/nanta.png")}
 						alt="none"
-					></img>
-				</Link>
-			</div>
-		</div>
+					></img>{" "}
+				</Link>{" "}
+			</div>{" "}
+		</div>{" "}
 	</div>
 );
 export default Footer;

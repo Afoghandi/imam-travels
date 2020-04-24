@@ -1,21 +1,21 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import "./App.css";
 
-import HomePage from "./pages/homepage/hompage.component";
-import RiteSite from "./pages/ritepage/ritepage.components";
-import AboutPage from "./pages/about/about.component";
-import contact from "./pages/contact/contact";
+import "./App.css";
+import NavBar from "./components/NavBar";
+import HomePage from "./pages/HomePage";
+import Sites from "./pages/Sites";
+import singlePage from "./pages/singlePage";
 import Footer from "./components/footer/Footer.component";
-//import NavList from "./components/navigation/nav.component";
+
 function App() {
 	return (
 		<div>
+			<NavBar />
 			<Switch>
 				<Route exact path="/" component={HomePage} />{" "}
-				<Route path="/rites" component={RiteSite} />{" "}
-				<Route path="/about" component={AboutPage} />{" "}
-				<Route path="/contact" component={contact} />{" "}
+				<Route exact path="/sites/" component={Sites} />{" "}
+				<Route exact path="/sites/:slug" component={singlePage} />{" "}
 			</Switch>{" "}
 			<Footer />
 		</div>

@@ -1,8 +1,18 @@
-const riteData = [{
-        title: "Hajj",
-        img: require("../../images/mecca.png"),
-        id: 5,
-        content: `The Hajj ( حَجّ‎ Ḥaǧǧ "pilgrimage") is an annual Islamic 
+//import defaultImg from "../../images/HAJJ-2018.png";
+import muzdalifah from "./images/muzdalifah.jpg";
+import mecca from "./images/mecca.png";
+import medina from "./images/medina.png";
+import miqats from "./images/miqat.jpg";
+import mountaraft from "./images/mount-arafat.jpg";
+
+const Data = [{
+        sys: { id: 1 },
+        fields: {
+            title: "Hajj",
+            img: mecca,
+            slug: "mecca",
+            popular: false,
+            content: `The Hajj ( حَجّ‎ Ḥaǧǧ "pilgrimage") is an annual Islamic 
 		pilgrimage to Mecca, Saudi Arabia, the holiest city for
 		 Muslims. It is a mandatory religious duty for Muslims that 
 	 must be carried out at least once in their lifetime by all adult 
@@ -26,14 +36,18 @@ const riteData = [{
 	 Muslims may also undertake an Umrah ( عُمرَة‎), or "lesser pilgrimage" 
 	 to Mecca at other times of the year. But this is not a substitute for the Hajj 
 	 and Muslims are still obligated to perform the Hajj at some other point in their lifetime 
-	 if they have the means to do so.`
+	 if they have the means to do so.`,
+        },
     },
 
     {
-        title: "Medina",
-        img: require("../../images/medina.png"),
-        id: 1,
-        content: `Medina
+        sys: { id: "2" },
+        fields: {
+            title: "Medina",
+            img: medina,
+            popular: true,
+            slug: "medina",
+            content: `Medina
 						is the capital of the Al-Madinah Region in Saudi Arabia. 
 						At the city's heart is al-Masjid an-Nabawi ('The Prophet's Mosque'), 
 						which is the burial place of the Islamic prophet, Muhammad. 
@@ -46,14 +60,18 @@ const riteData = [{
 					to three prominent mosques, namely al-Masjid an-Nabawi, Quba Mosque, and Masjid al-Qiblatayn 
 					('The mosque of the two Qiblas'). Muslims believe that the chronologically final surahs of the Quran 
 					were revealed to 
-					Muhammad in Medina, and are called Medinan surahs in contrast to the earlier Meccan surahs.`
+					Muhammad in Medina, and are called Medinan surahs in contrast to the earlier Meccan surahs.`,
+        },
     },
 
     {
-        title: "Miqat",
-        img: require("../../images/miqat.jpg"),
-        id: 2,
-        content: `A mīqāt (Arabic: مِيْقَات‎, lit. 'a stated place'; 
+        sys: { id: "3" },
+        fields: {
+            title: "Miqat",
+            img: miqats,
+            popular: true,
+            slug: "miqat",
+            content: `A mīqāt (Arabic: مِيْقَات‎, lit. 'a stated place'; 
 		plural mawāqīt (مَوَاقِيْت)) is the principal boundary point of an 
 		area, within which Muslim pilgrims on the Ḥajj must be in the state 
 		of Iḥrām (a state of consecration in which certain worldly activities are prohibited).
@@ -63,13 +81,17 @@ const riteData = [{
 		 Al-Ḥil (ٱلْحِل) refers to the area between the boundaries of the miqats and the boundaries
 		  of the Ḥaram. Towns and cities such as Jeddah, Khulais, Al-Janun, and Tanʿim are all situated
 		   within Al-Hil. Pilgrims residing in or travelling
-		  through Al-Hil must enter into a state of ihram before crossing the boundary of the Haram.`
+		  through Al-Hil must enter into a state of ihram before crossing the boundary of the Haram.`,
+        },
     },
     {
-        title: "Muzdalifah",
-        img: require("../../images/muzdalifah.jpg"),
-        id: 3,
-        content: `Muzdalifah ( مُزْدَلِفَة‎) is an open, level 
+        sys: { id: "4" },
+        fields: {
+            title: "Muzdalifah",
+            img: muzdalifah,
+            popular: true,
+            slug: "muzdalifah",
+            content: `Muzdalifah ( مُزْدَلِفَة‎) is an open, level 
 		area near Mecca in the Hejazi region of Saudi Arabia that is associated with the Ḥajj 
 		("Pilgrimage").
 		 It lies just southeast of Mina, on the route between Mina and Arafat.
@@ -81,13 +103,17 @@ const riteData = [{
 			After arriving at Muzdalifah, pilgrims pray the Maghrib and ʿIshāʾ prayers jointly, whereas 
 			the Isha prayer is shortened to 2 rakats. At Muzdalifah, pilgrims collect pebbles for the 
 			Stoning of the Devil
-		  ( رَمِي ٱلْجَمَرَات‎, romanized: Ramī al-Jamarāt, lit. 'Stoning of the Place of Pebbles')`
+		  ( رَمِي ٱلْجَمَرَات‎, romanized: Ramī al-Jamarāt, lit. 'Stoning of the Place of Pebbles')`,
+        },
     },
     {
-        title: "Mount Arafat",
-        img: require("../../images/mount-arafat.jpg"),
-        id: 4,
-        content: `Mount Arafat (Arabic: جَبَل عَرَفَات‎ transliterated Jabal ʿArafāt) is a granite hill about 20 km
+        sys: { id: "5" },
+        fields: {
+            title: "Mount Arafat",
+            img: mountaraft,
+            popular: false,
+            slug: "mount-arafat",
+            content: `Mount Arafat (Arabic: جَبَل عَرَفَات‎ transliterated Jabal ʿArafāt) is a granite hill about 20 km
 		 (12 mi) east of central Mecca in the plain of Arafat in the Hejaz, Saudi Arabia. Mount Arafat 
 		 reaches about 70 m (230 ft) in height, and is
 		 also known as the "Mount of Mercy" (Arabic: جَبَل ٱلرَّحْمَة‎, romanized: Jabal Ar-Raḥmah)
@@ -104,7 +130,8 @@ const riteData = [{
 		  mountain to supplicate to Allah to forgive their sins and to pray for personal strength 
 		  in the future. 
 		  Arafat rituals end at sunset and pilgrims then move to Muzdalifah for Maghrib Prayer and a 
-		  shortened Isha prayer and for a short rest.`
-    }
+		  shortened Isha prayer and for a short rest.`,
+        },
+    },
 ];
-export default riteData;
+export default Data;
